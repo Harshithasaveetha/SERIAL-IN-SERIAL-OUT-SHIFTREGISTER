@@ -29,7 +29,7 @@ Each D flip-flop in the circuit has a Data (D) input, a Clock (CLK) input, and a
 1.Initialize the shift register to a known state (e.g., all zeros). 2.Input a bit serially into the shift register. 3.Shift the contents of the register one position to the right (or left). 4.Output the shifted bit from the last stage of the register. 5.Repeat steps 2-4 for each bit you want to input and shift
 
 **PROGRAM**
-
+```
 module Verilog1(clk, sin, q);
 input clk;
 input sin;
@@ -43,7 +43,7 @@ q[2] <= q[1];
 q[3] <= q[2];
 end
 endmodule
-
+```
 **RTL LOGIC FOR SISO Shift Register**
 
 ![395799312-35a6590e-342e-4bc9-94c3-38e87c311d65](https://github.com/user-attachments/assets/b5b8d2f1-20cc-4bd7-83f3-c23a59a92e71)
